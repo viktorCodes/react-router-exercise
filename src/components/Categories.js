@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectCategories } from '../features/categories/categoriesSlice';
-import { Route, Link, useMatch } from 'react-router-dom';
+import { Route, Link, useRouteMatch } from 'react-router-dom';
 import Category from './Category'
 
 export default function Categories () {
   const categories = useSelector(selectCategories)
-  const { path, url } = useMatch()
+  const { path, url } = useRouteMatch()
 
   return (
     <main>
