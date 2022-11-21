@@ -11,6 +11,7 @@ import Profile from "../components/Profile";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import "./App.css";
+import EditProfileForm from "../components/EditProfileForm";
 
 function App() {
   return (
@@ -45,7 +46,9 @@ function App() {
   <Route path='/profile'>  
     <Profile />
   </Route>
-  
+  <Route path='/editprofileform'>  
+    <EditProfileForm />
+  </Route>
 
   </Switch>
       
